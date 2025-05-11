@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style_.css">
+    <link rel="stylesheet" href="utilty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="top-section">
+                <div class="logo-home-container">
+                    <div class="logo">
+                        <img src="svgs/logo.svg" alt="Spotify">
+                    </div>
+                    <div class="home-link">
+                        <img src="svgs/home.svg" alt="Home">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="library-section">
+                <div class="library-header">
+                    <div class="library-icon">
+                        <img src="svgs/lib.svg" alt="Library">
+                        <span>Your Library</span>
+                    </div>
+                    <button class="add-button">
+                        <img src="svgs/plus.svg" alt="Add">
+                    </button>
+                </div>
+                
+                <div class="playlist-section">
+                    <div class="search-recent">
+                        <div class="search-area">
+                            <div class="search-icon">
+                                <img src="svgs/search.svg" alt="Search">
+                            </div>
+                            
+                        </div>
+                        <div class="sort-button">
+                            <span>Recently Added</span>
+                            <img src="svgs/threesleepinglines.svg" alt="Sort" height="15px" width="15px">
+                        </div>
+                    </div>
+                    
+                    <div class="playlists">
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Carry On</div>
+                                <div class="playlist-meta">Anna Yvette, Lost Sky</div>
+                            </div>
+                            <button class="play-now" data-song="Anna Yvette, Lost Sky - Carry On [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Wanderlust</div>
+                                <div class="playlist-meta">Everen Maxwell</div>
+                            </div>
+                            <button class="play-now" data-song="Everen Maxwell - Wanderlust [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">All Or Nothing</div>
+                                <div class="playlist-meta">No Hero</div>
+                            </div>
+                            <button class="play-now" data-song="No Hero - All Or Nothing [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Lighthouse</div>
+                                <div class="playlist-meta">PhiloSofie</div>
+                            </div>
+                            <button class="play-now" data-song="PhiloSofie - Lighthouse [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Bounce On Da Riddim</div>
+                                <div class="playlist-meta">Emily</div>
+                            </div>
+                            <button class="play-now" data-song="Emily - Bounce On Da Riddim [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-icon">
+                                <img src="svgs/music.svg" alt="Music">
+                            </div>
+                            <div class="playlist-info">
+                                <div class="playlist-name">Move Like This</div>
+                                <div class="playlist-meta">Bad Computer</div>
+                            </div>
+                            <button class="play-now" data-song="Bad Computer - Move Like This [NCS Release].mp3">
+                                <img src="/svgs/play.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation -->
+            <nav class="top-bar">
+                <div class="nav-controls">
+                    <div class="search-container">
+                        <img src="svgs/search.svg" alt="Search">
+                        <input type="text" placeholder="What do you want to play?" id="search-input">
+                    </div>
+                </div>
+                <div class="nav-actions">
+                    <a href="#" class="nav-link">Premium</a>
+                    <a href="#" class="nav-link">Support</a>
+                    <a href="#" class="nav-link">Download</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="nav-link">Install App</a>
+                    <a href="#" class="nav-link">Signup</a>
+                    <button class="login-button">Log in</button>
+                    <button class="mobile-menu-button">
+                        <img src="svgs/threesleepinglines.svg" alt="Menu" height="15px" width="15px">
+                    </button>
+                    <div class="dropdown-close">
+                        <img src="svgs/close.svg" alt="Close" height="15px" width="15px">
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content Area -->
+            <div class="content">
+                <section class="trending-section">
+                    <h2>Trending Songs</h2>
+                    <div class="song-grid">
+                        <!-- Song Card 1 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="images/6d3fa98d-5c2b-4aa4-87bf-813a27a2e6f5.jpeg" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Nature</h3>
+                            <p>Artist</p>
+                        </div>
+                        <!-- Song Card 2 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="/images/🌌 galaxia.jpeg" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Galaxia</h3>
+                            
+                        </div>
+                        <!-- Song Card 3 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="images/16.jpeg" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Tommy</h3>
+                            
+                        </div>
+                        <!-- Song Card 4 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="images/Pinterest.jpeg" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Dark night</h3>
+                            
+                        </div>
+                        <!-- Song Card 5 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="images/👑.jpeg" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Jerry</h3>
+                            
+                        </div>
+                        <!-- Song Card 6 -->
+                        <div class="song-card">
+                            <div class="song-image">
+                                <img src="images/sponge bob.gif" alt="2 Khatole">
+                                <button class="play-button"><img src="svgs/play.svg" alt="Play"></button>
+                            </div>
+                            <h3>Sponge bob</h3>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section class="artists-section">
+                    <h2>Popular artists</h2>
+                    <div class="artist-grid">
+                        <!-- Artist Card 1 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/iPhone app cover.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                        <!-- Artist Card 2 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/3302820c-ad44-4a51-9afe-2ac2476565c8.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                        <!-- Artist Card 3 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/Green profile pics.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                        <!-- Artist Card 4 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/0ee65511-56bc-4ed9-a0f3-fd5fb474f777.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                        <!-- Artist Card 5 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/Random profile pics.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                        <!-- Artist Card 6 -->
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="images/خيال.jpeg" alt="Pritam">
+                            </div>
+                            <h3>Pritam</h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playbar -->
+    <div class="playbar">
+        <div class="playbar-left">
+            <div class="now-playing">
+                <img src="svgs/music.svg" alt="Now Playing">
+                <div class="song-info">
+                    <h4>2 Khatole</h4>
+                    <p>Masoom Sharma</p>
+                </div>
+            </div>
+        </div>
+        <div class="playbar-center">
+            <div class="player-controls">
+                <button class="control-button" id="previous">
+                    <img src="svgs/prev.svg" alt="Previous">
+                </button>
+                <div class="play-pause-container"> 
+                    <button class="play-pause" id="play">
+                        <img src="svgs/play2.svg" alt="Play">
+                    </button>
+                </div>
+                <button class="control-button" id="next">
+                    <img src="svgs/next.svg" alt="Next">
+                </button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress">
+                    <div class="progress-dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playbar-right">
+            <div class="volume-control">
+                <button class="volume-button">
+                    <img src="svgs/volume.svg" alt="Volume">
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
